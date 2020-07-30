@@ -1,0 +1,54 @@
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Shadows Into Light', cursive; */
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: yellowgreen;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    text-shadow: 2px 2px #7f7f7f; 
+}
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+
+}
+.thumbnail {
+    border-radius: 15px;
+    margin: 15px;
+}
+input {
+    align-self: center;
+    max-width: 500px;
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+    margin: 20px;
+    box-shadow: inset 3px 3px 5px rgba(0, 7, 36, 0.150);
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+@media(min-width: 768px) {
+  h1 {
+      font-size: 2.5em;
+  }
+}
