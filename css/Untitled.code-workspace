@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/baguetteBox.js-dev/dist"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Treehouse-project5",
+		"liveServer.settings.port": 5502
+	}
+}

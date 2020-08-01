@@ -1,9 +1,10 @@
 /* font-family: 'Permanent Marker', cursive;
 font-family: 'Shadows Into Light', cursive; */
+/* <----- Element Styles-----> */
 header {
     width: 100vw;
     height: 100px;
-    background-color: yellowgreen;
+    background-color: rgb(36,98,149);
     display: flex;
    justify-content: center;
    align-items: center;
@@ -15,23 +16,22 @@ h1 {
 }
 main {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    justify-items: center;
 }
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
+footer {
+    width: 100%;
+    display: grid;
     justify-content: center;
-    max-width: 1000px;
-
-}
-.thumbnail {
-    border-radius: 15px;
-    margin: 15px;
+    margin: 40px 0px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 input {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+    font-size: 18px;
     align-self: center;
     max-width: 500px;
     border-radius: 5px;
@@ -40,15 +40,40 @@ input {
     margin: 20px;
     box-shadow: inset 3px 3px 5px rgba(0, 7, 36, 0.150);
 }
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 40px;
+input:focus{
+    background-color: lightblue;
+    transition: ease-in .5s;
+}
+/* <----- Class Styles -----> */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+
+}
+.thumbnail {
+    border-radius: 15px;
+    margin: 15px;
 }
 
+
+/* <----- Media Qeuries Styles-----> */
+
+@media(min-width: 500px) {
+    .photo-gallery {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
 @media(min-width: 768px) {
   h1 {
       font-size: 2.5em;
   }
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media(min-width: 1024px) {
+    .photo-gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
 }
